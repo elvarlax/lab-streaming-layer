@@ -8,16 +8,18 @@ using namespace lsl;
  */
 
 int main(int argc, char* argv[]) {
+	const size_t size = 128;
+
 	// make a new stream_info (128ch) and open an outlet with it
-	stream_info info("SimpleStream", "EEG", 128);
+	stream_info info("SimpleStream", "EEG", size);
 	stream_outlet outlet(info);
 
 	// send data forever
-	float sample[128]{};
+	float sample[size]{};
 
 	while (true) {
 		// generate random data
-		for (int i = 0; i < 128; i++) {
+		for (int i = 0; i < size; i++) {
 			sample[i] = (rand() % 1500) / 500.0 - 1.5;
 		}
 		// send it
