@@ -18,7 +18,7 @@ In order to use vcpkg with Visual Studio,
 run the following command (may require administrator elevation):
 
 ```cmd
-> ./vcpkg integrate install liblsl
+> ./vcpkg integrate install
 ```
 
 Goto directory: "C:\vcpkg\installed\x86-windows\debug\lib"
