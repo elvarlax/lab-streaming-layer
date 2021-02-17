@@ -5,7 +5,8 @@ It is a simple lab streaming layer project that includes a sender sending random
 ## Setup
 ```cmd
 > git clone https://github.com/microsoft/vcpkg
-> ./vcpkg/bootstrap-vcpkg.bat
+> cd vcpkg
+> ./bootstrap-vcpkg.bat
 ```
 
 To install the libraries for your project, run:
